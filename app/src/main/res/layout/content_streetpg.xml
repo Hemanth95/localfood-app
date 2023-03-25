@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.localfood.streetpg"
+    tools:showIn="@layout/app_bar_streetpg">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0"
+        >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_height="200dp"
+       android:layout_width="match_parent"
+       android:background="#009688">
+
+       <ImageButton
+           android:id="@+id/panistall"
+           android:layout_width="170dp"
+           android:layout_height="170dp"
+           android:background="@drawable/panistall"
+           android:layout_centerVertical="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginStart="32dp" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Panni Puri Stall"
+           android:textColor="#def1f0"
+           android:textStyle="bold"
+           android:textSize="25dp"
+
+           android:layout_marginStart="45dp"
+           android:layout_marginTop="14dp"
+           android:layout_alignTop="@+id/panistall"
+           android:layout_toEndOf="@+id/panistall" />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/panienter"
+           android:text="enter"
+
+           android:layout_alignBottom="@+id/panistall"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="12dp" />
+
+
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="#4e76bf">
+
+        <ImageButton
+            android:id="@+id/churmuristall"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/churumuri"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Churumuri Stall"
+            android:textColor="#def1f0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/churmuristall"
+            android:layout_toEndOf="@+id/churmuristall" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/churumurienter"
+            android:text="enter"
+
+            android:layout_alignBottom="@+id/churmuristall"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="#041b33">
+
+        <ImageButton
+            android:id="@+id/gobistall"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/gobi"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gobi Manchuri stall"
+            android:textColor="#def1f0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/gobistall"
+            android:layout_toEndOf="@+id/gobistall" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gobienter"
+            android:text="enter"
+
+            android:layout_alignBottom="@+id/gobistall"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="#693617">
+
+        <ImageButton
+            android:id="@+id/bajjistall"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/bajji"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bajji stall"
+            android:textColor="#def1f0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/bajjistall"
+            android:layout_toEndOf="@+id/bajjistall" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bajjienter"
+            android:text="enter"
+
+            android:layout_alignBottom="@+id/bajjistall"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="#0e1531">
+
+        <ImageButton
+            android:id="@+id/samosastall"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/samosa"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samosa and Kachori stall"
+            android:textColor="#def1f0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/samosastall"
+            android:layout_toEndOf="@+id/samosastall" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/samosaenter"
+            android:text="enter"
+
+            android:layout_alignBottom="@+id/samosastall"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="#865d4b">
+
+        <ImageButton
+            android:id="@+id/gollistall"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/goli"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golgappa stall"
+            android:textColor="#def1f0"
+            android:textStyle="bold"
+            android:textSize="25dp"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignTop="@+id/gollistall"
+            android:layout_toEndOf="@+id/gollistall" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gollienter"
+            android:text="enter"
+
+            android:layout_alignBottom="@+id/gollistall"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+
+    </RelativeLayout>
+</TableLayout>
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

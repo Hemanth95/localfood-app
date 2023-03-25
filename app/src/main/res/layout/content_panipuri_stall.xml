@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.localfood.panipuri_stall"
+    tools:showIn="@layout/activity_panipuri_stall"
+    android:background="@drawable/panistall_back">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/paniView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/pani" />
+
+                <TextView
+                    android:id="@+id/panitext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/paniView"
+                    android:text="Pani Puri"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/panicart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/panitext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/panibuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/panitext"
+                    android:layout_alignTop="@+id/panicart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/paniplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/panitext"
+                    android:layout_below="@+id/panitext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/paniamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="30"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/paniplate"
+                    android:layout_alignBottom="@+id/paniplate"
+                    android:layout_alignEnd="@+id/panibuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/paniamou"
+                    android:layout_alignBottom="@+id/paniamou"
+                    android:layout_toEndOf="@+id/paniamou"
+                    android:id="@+id/panirupee" />
+
+                <EditText
+                    android:id="@+id/paninumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/paniamou"
+                    android:layout_alignEnd="@+id/panirupee" />
+
+                <TextView
+                    android:id="@+id/paniplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/panirupee"
+                    android:layout_alignEnd="@+id/panitext" />
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+
+                <ImageView
+                    android:id="@+id/masaleView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/masale_puri" />
+
+                <TextView
+                    android:id="@+id/masaletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/masaleView"
+                    android:text="Masale Puri"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/masalecart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/masaletext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/masalebuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/masaletext"
+                    android:layout_alignTop="@+id/masalecart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/masaleplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/masaletext"
+                    android:layout_below="@+id/masaletext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/masaleamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/masaleplate"
+                    android:layout_alignBottom="@+id/masaleplate"
+                    android:layout_alignEnd="@+id/masalebuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/masaleamou"
+                    android:layout_alignBottom="@+id/masaleamou"
+                    android:layout_toEndOf="@+id/masaleamou"
+                    android:id="@+id/masalerupee" />
+
+                <EditText
+                    android:id="@+id/masalenumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/masaleamou"
+                    android:layout_alignEnd="@+id/masalerupee" />
+                <TextView
+                    android:id="@+id/masaleplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/masalerupee"
+                    android:layout_alignStart="@+id/masalebuy" />
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/dhaiView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/dhai_puri" />
+
+                <TextView
+                    android:id="@+id/dhaitext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/dhaiView"
+                    android:text="Dhai Puri"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dhaicart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/dhaitext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/dhaibuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/dhaitext"
+                    android:layout_alignTop="@+id/dhaicart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/dhaiplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/dhaitext"
+                    android:layout_below="@+id/dhaitext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/dhaiamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/dhaiplate"
+                    android:layout_alignBottom="@+id/dhaiplate"
+                    android:layout_alignEnd="@+id/dhaibuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/dhaiamou"
+                    android:layout_alignBottom="@+id/dhaiamou"
+                    android:layout_toEndOf="@+id/dhaiamou"
+                    android:id="@+id/dhairupee" />
+
+                <EditText
+                    android:id="@+id/dhainumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/dhaiamou"
+                    android:layout_alignEnd="@+id/dhairupee" />
+
+                <TextView
+                    android:id="@+id/dhaiplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/dhairupee"
+                    android:layout_alignEnd="@+id/dhaitext" />
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/sevView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/sev_puri" />
+
+                <TextView
+                    android:id="@+id/sevtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/sevView"
+                    android:text="Sev Puri"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sevcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/sevtext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/sevbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/sevtext"
+                    android:layout_alignTop="@+id/sevcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/sevplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/sevtext"
+                    android:layout_below="@+id/sevtext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/sevamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/sevplate"
+                    android:layout_alignBottom="@+id/sevplate"
+                    android:layout_alignEnd="@+id/sevbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/sevamou"
+                    android:layout_alignBottom="@+id/sevamou"
+                    android:layout_toEndOf="@+id/sevamou"
+                    android:id="@+id/sevrupee" />
+
+                <EditText
+                    android:id="@+id/sevnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/sevamou"
+                    android:layout_alignEnd="@+id/sevrupee" />
+
+                <TextView
+                    android:id="@+id/sevplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/sevrupee"
+                    android:layout_alignEnd="@+id/sevtext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/bhelView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/bhel_puri" />
+
+                <TextView
+                    android:id="@+id/bheltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/bhelView"
+                    android:text="Bhel Puri"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bhelcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/bheltext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/bhelbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bheltext"
+                    android:layout_alignTop="@+id/bhelcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/bhelplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/bheltext"
+                    android:layout_below="@+id/bheltext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/bhelamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="40"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/bhelplate"
+                    android:layout_alignBottom="@+id/bhelplate"
+                    android:layout_alignEnd="@+id/bhelbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/bhelamou"
+                    android:layout_alignBottom="@+id/bhelamou"
+                    android:layout_toEndOf="@+id/bhelamou"
+                    android:id="@+id/bhelrupee" />
+
+                <EditText
+                    android:id="@+id/bhelnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/bhelamou"
+                    android:layout_alignEnd="@+id/bhelrupee" />
+
+                <TextView
+                    android:id="@+id/bhelplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/bhelrupee"
+                    android:layout_alignEnd="@+id/bheltext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/alloView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/aloo_puri" />
+
+                <TextView
+                    android:id="@+id/allotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/alloView"
+                    android:text="Aloo Puri"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/allocart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/allotext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/allobuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/allotext"
+                    android:layout_alignTop="@+id/allocart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/alloplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/allotext"
+                    android:layout_below="@+id/allotext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/alloamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/alloplate"
+                    android:layout_alignBottom="@+id/alloplate"
+                    android:layout_alignEnd="@+id/allobuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/alloamou"
+                    android:layout_alignBottom="@+id/alloamou"
+                    android:layout_toEndOf="@+id/alloamou"
+                    android:id="@+id/allorupee" />
+
+                <EditText
+                    android:id="@+id/allonumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/alloamou"
+                    android:layout_alignEnd="@+id/allorupee" />
+
+                <TextView
+                    android:id="@+id/alloplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/allorupee"
+                    android:layout_alignEnd="@+id/allotext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.localfood.Fast_food"
+    tools:showIn="@layout/app_bar_fast_food">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#59ce66">
+
+                <ImageButton
+                    android:id="@+id/dosa"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/dosa"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dosa Varieties"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/dosa"
+                    android:layout_toEndOf="@+id/dosa" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dosaenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/dosa"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#cc1e14">
+
+                <ImageButton
+                    android:id="@+id/idli"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/idli"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Idli Varieties"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/idli"
+                    android:layout_toEndOf="@+id/idli" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idlienter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/idli"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#4f3232">
+
+                <ImageButton
+                    android:id="@+id/vada"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/vada"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vada Varieties"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/vada"
+                    android:layout_toEndOf="@+id/vada" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vadaenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/vada"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#e4af65">
+
+                <ImageButton
+                    android:id="@+id/rice"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/rice"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rice Items"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/rice"
+                    android:layout_toEndOf="@+id/rice" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/riceenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/rice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#001327">
+
+                <ImageButton
+                    android:id="@+id/others"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/other"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="others"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/others"
+                    android:layout_toEndOf="@+id/others" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otherenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/others"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

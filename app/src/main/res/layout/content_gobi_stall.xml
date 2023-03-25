@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.localfood.Gobi_stall"
+    tools:showIn="@layout/activity_gobi_stall"
+    android:background="@drawable/gobi_back">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+        <TableLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/gbView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/gobi_manchuri" />
+
+                <TextView
+                    android:id="@+id/gbtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/gbView"
+                    android:text="Gobi Manchurian"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/gbcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/gbtext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/gbbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/gbtext"
+                    android:layout_alignTop="@+id/gbcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/gbplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/gbtext"
+                    android:layout_below="@+id/gbtext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/gbamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/gbplate"
+                    android:layout_alignBottom="@+id/gbplate"
+                    android:layout_alignEnd="@+id/gbbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/gbamou"
+                    android:layout_alignBottom="@+id/gbamou"
+                    android:layout_toEndOf="@+id/gbamou"
+                    android:id="@+id/gbrupee" />
+
+                <EditText
+                    android:id="@+id/gbnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/gbamou"
+                    android:layout_alignEnd="@+id/gbrupee" />
+
+                <TextView
+                    android:id="@+id/gbplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/gbrupee"
+                    android:layout_alignStart="@+id/gbplate" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/gbnView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/gobi_nuddles" />
+
+                <TextView
+                    android:id="@+id/gbntext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/gbnView"
+                    android:text="Gobi mix noodles"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/gbncart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/gbntext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/gbnbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/gbntext"
+                    android:layout_alignTop="@+id/gbncart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/gbnplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/gbntext"
+                    android:layout_below="@+id/gbntext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/gbnamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/gbnplate"
+                    android:layout_alignBottom="@+id/gbnplate"
+                    android:layout_alignEnd="@+id/gbnbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/gbnamou"
+                    android:layout_alignBottom="@+id/gbnamou"
+                    android:layout_toEndOf="@+id/gbnamou"
+                    android:id="@+id/gbnrupee" />
+
+                <EditText
+                    android:id="@+id/gbnnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/gbnamou"
+                    android:layout_alignEnd="@+id/gbnrupee" />
+
+                <TextView
+                    android:id="@+id/gbnplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/gbnrupee"
+                    android:layout_alignStart="@+id/gbntext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/noodlesView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/noodles" />
+
+                <TextView
+                    android:id="@+id/noodlestext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/noodlesView"
+                    android:text="Noodles"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/noodlescart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/noodlestext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/noodlesbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/noodlestext"
+                    android:layout_alignTop="@+id/noodlescart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/noodlesplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/noodlestext"
+                    android:layout_below="@+id/noodlestext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/noodlesamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/noodlesplate"
+                    android:layout_alignBottom="@+id/noodlesplate"
+                    android:layout_alignEnd="@+id/noodlesbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/noodlesamou"
+                    android:layout_alignBottom="@+id/noodlesamou"
+                    android:layout_toEndOf="@+id/noodlesamou"
+                    android:id="@+id/noodlesrupee" />
+
+                <EditText
+                    android:id="@+id/noodlesnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/noodlesamou"
+                    android:layout_alignEnd="@+id/noodlesrupee" />
+
+                <TextView
+                    android:id="@+id/noodlesplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/noodlesrupee"
+                    android:layout_alignStart="@+id/noodlestext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/gofrView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/gobi_fried" />
+
+                <TextView
+                    android:id="@+id/gofrtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/gofrView"
+                    android:text="Gobi mix Fried rice"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/gofrcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/gofrtext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/gofrbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/gofrtext"
+                    android:layout_alignTop="@+id/gofrcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/gofrplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/gofrtext"
+                    android:layout_below="@+id/gofrtext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/goframou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/gofrplate"
+                    android:layout_alignBottom="@+id/gofrplate"
+                    android:layout_alignEnd="@+id/gofrbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/goframou"
+                    android:layout_alignBottom="@+id/goframou"
+                    android:layout_toEndOf="@+id/goframou"
+                    android:id="@+id/gofrrupee" />
+
+                <EditText
+                    android:id="@+id/gofrnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/goframou"
+                    android:layout_alignEnd="@+id/gofrrupee" />
+
+                <TextView
+                    android:id="@+id/gofrplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/gofrrupee"
+                    android:layout_alignStart="@+id/gofrtext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/frView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/fried_rice" />
+
+                <TextView
+                    android:id="@+id/frtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/frView"
+                    android:text="Fried Rice"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/frcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/frtext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/frbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/frtext"
+                    android:layout_alignTop="@+id/frcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/frplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/frtext"
+                    android:layout_below="@+id/frtext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/framou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/frplate"
+                    android:layout_alignBottom="@+id/frplate"
+                    android:layout_alignEnd="@+id/frbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/framou"
+                    android:layout_alignBottom="@+id/framou"
+                    android:layout_toEndOf="@+id/framou"
+                    android:id="@+id/frrupee" />
+
+                <EditText
+                    android:id="@+id/frnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/framou"
+                    android:layout_alignEnd="@+id/frrupee" />
+
+                <TextView
+                    android:id="@+id/frplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/frrupee"
+                    android:layout_alignStart="@+id/frtext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/dgobView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/dry_gobi" />
+
+                <TextView
+                    android:id="@+id/dgobtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/dgobView"
+                    android:text="Dry Gobi"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dgobcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/dgobtext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/dgobbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/dgobtext"
+                    android:layout_alignTop="@+id/dgobcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/dgobplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/dgobtext"
+                    android:layout_below="@+id/dgobtext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/dgobamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/dgobplate"
+                    android:layout_alignBottom="@+id/dgobplate"
+                    android:layout_alignEnd="@+id/dgobbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/dgobamou"
+                    android:layout_alignBottom="@+id/dgobamou"
+                    android:layout_toEndOf="@+id/dgobamou"
+                    android:id="@+id/dgobrupee" />
+
+                <EditText
+                    android:id="@+id/dgobnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/dgobamou"
+                    android:layout_alignEnd="@+id/dgobrupee" />
+
+                <TextView
+                    android:id="@+id/dgobplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/dgobrupee"
+                    android:layout_alignStart="@+id/dgobtext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/bamanView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/baby_gobi" />
+
+                <TextView
+                    android:id="@+id/bamantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/bamanView"
+                    android:text="Baby Corn Manchurian"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bamancart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/bamantext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/bamanbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bamantext"
+                    android:layout_alignTop="@+id/bamancart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/bamanplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/bamantext"
+                    android:layout_below="@+id/bamantext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/bamanamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/bamanplate"
+                    android:layout_alignBottom="@+id/bamanplate"
+                    android:layout_alignEnd="@+id/bamanbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/bamanamou"
+                    android:layout_alignBottom="@+id/bamanamou"
+                    android:layout_toEndOf="@+id/bamanamou"
+                    android:id="@+id/bamanrupee" />
+
+                <EditText
+                    android:id="@+id/bamannumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/bamanamou"
+                    android:layout_alignEnd="@+id/bamanrupee" />
+
+                <TextView
+                    android:id="@+id/bamanplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/bamanrupee"
+                    android:layout_alignStart="@+id/bamantext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/mashmanView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/mash_gobi" />
+
+                <TextView
+                    android:id="@+id/mashmantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/mashmanView"
+                    android:text="Mashroom Manchurian"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/mashmancart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/mashmantext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/mashmanbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/mashmantext"
+                    android:layout_alignTop="@+id/mashmancart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/mashmanplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/mashmantext"
+                    android:layout_below="@+id/mashmantext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mashmanamou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/mashmanplate"
+                    android:layout_alignBottom="@+id/mashmanplate"
+                    android:layout_alignEnd="@+id/mashmanbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/mashmanamou"
+                    android:layout_alignBottom="@+id/mashmanamou"
+                    android:layout_toEndOf="@+id/mashmanamou"
+                    android:id="@+id/mashmanrupee" />
+
+                <EditText
+                    android:id="@+id/mashmannumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/mashmanamou"
+                    android:layout_alignEnd="@+id/mashmanrupee" />
+
+                <TextView
+                    android:id="@+id/mashmanplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/mashmanrupee"
+                    android:layout_alignStart="@+id/mashmantext" />
+
+
+
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#909090"></TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:background="#a9a9a9"></TableLayout>
+</TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

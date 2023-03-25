@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.localfood.Restaurants"
+    tools:showIn="@layout/app_bar_restaurants">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#005ee0">
+
+                <ImageButton
+                    android:id="@+id/nalpak"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/nalpak"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nalpak"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/nalpak"
+                    android:layout_toEndOf="@+id/nalpak" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nalpakenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/nalpak"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#f1ee2e">
+
+                <ImageButton
+                    android:id="@+id/mahesh"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/mahesh"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mahesh Prasad"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/mahesh"
+                    android:layout_toEndOf="@+id/mahesh" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/maheshenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/mahesh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#00d6ff">
+
+                <ImageButton
+                    android:id="@+id/green"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/green"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green Leaf"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/green"
+                    android:layout_toEndOf="@+id/green" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/greenenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/green"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:background="#874e43">
+
+                <ImageButton
+                    android:id="@+id/oyster"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/oyster"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oyster Bay"
+                    android:textColor="#def1f0"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignTop="@+id/oyster"
+                    android:layout_toEndOf="@+id/oyster" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/oysterenter"
+                    android:text="enter"
+
+                    android:layout_alignBottom="@+id/oyster"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp" />
+
+
+            </RelativeLayout>
+
+        </TableLayout>
+        </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

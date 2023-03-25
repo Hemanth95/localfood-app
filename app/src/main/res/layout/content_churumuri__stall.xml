@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.localfood.Churumuri_Stall"
+    tools:showIn="@layout/activity_churumuri__stall"
+    android:background="@drawable/churumuri_back">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+    <TableLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/dhaiView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/dhai_puri" />
+
+            <TextView
+                android:id="@+id/dhaitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/dhaiView"
+                android:text="Dhai Puri"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dhaicart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/dhaitext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/dhaibuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/dhaitext"
+                android:layout_alignTop="@+id/dhaicart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/dhaiplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/dhaitext"
+                android:layout_below="@+id/dhaitext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/dhaiamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/dhaiplate"
+                android:layout_alignBottom="@+id/dhaiplate"
+                android:layout_alignEnd="@+id/dhaibuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/dhaiamou"
+                android:layout_alignBottom="@+id/dhaiamou"
+                android:layout_toEndOf="@+id/dhaiamou"
+                android:id="@+id/dhairupee" />
+
+            <EditText
+                android:id="@+id/dhainumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/dhaiamou"
+                android:layout_alignEnd="@+id/dhairupee" />
+
+            <TextView
+                android:id="@+id/dhaiplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/dhairupee"
+                android:layout_alignStart="@+id/dhaitext" />
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/schurView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/spe_chur" />
+
+            <TextView
+                android:id="@+id/schurtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/schurView"
+                android:text="Special Churumuri"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/schurcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/schurtext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/schurbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/schurtext"
+                android:layout_alignTop="@+id/schurcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/schurplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/schurtext"
+                android:layout_below="@+id/schurtext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/schuramou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/schurplate"
+                android:layout_alignBottom="@+id/schurplate"
+                android:layout_alignEnd="@+id/schurbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/schuramou"
+                android:layout_alignBottom="@+id/schuramou"
+                android:layout_toEndOf="@+id/schuramou"
+                android:id="@+id/schurrupee" />
+
+            <EditText
+                android:id="@+id/schurnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/schuramou"
+                android:layout_alignEnd="@+id/schurrupee" />
+
+            <TextView
+                android:id="@+id/schurplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/schurrupee"
+                android:layout_alignStart="@+id/schurtext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/sevView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/sevvv" />
+
+            <TextView
+                android:id="@+id/sevtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/sevView"
+                android:text="Sev Puri"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sevcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/sevtext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/sevbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sevtext"
+                android:layout_alignTop="@+id/sevcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/sevplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/sevtext"
+                android:layout_below="@+id/sevtext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/sevamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/sevplate"
+                android:layout_alignBottom="@+id/sevplate"
+                android:layout_alignEnd="@+id/sevbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/sevamou"
+                android:layout_alignBottom="@+id/sevamou"
+                android:layout_toEndOf="@+id/sevamou"
+                android:id="@+id/sevrupee" />
+
+            <EditText
+                android:id="@+id/sevnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/sevamou"
+                android:layout_alignEnd="@+id/sevrupee" />
+
+            <TextView
+                android:id="@+id/sevplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/sevrupee"
+                android:layout_alignEnd="@+id/sevtext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/nchurView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/nor_chur" />
+
+            <TextView
+                android:id="@+id/nchurtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/nchurView"
+                android:text="Normal Churumuri"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nchurcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/nchurtext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/nchurbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nchurtext"
+                android:layout_alignTop="@+id/nchurcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/nchurplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/nchurtext"
+                android:layout_below="@+id/nchurtext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/nchuramou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/nchurplate"
+                android:layout_alignBottom="@+id/nchurplate"
+                android:layout_alignEnd="@+id/nchurbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/nchuramou"
+                android:layout_alignBottom="@+id/nchuramou"
+                android:layout_toEndOf="@+id/nchuramou"
+                android:id="@+id/nchurrupee" />
+
+            <EditText
+                android:id="@+id/nchurnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/nchuramou"
+                android:layout_alignEnd="@+id/nchurrupee" />
+
+            <TextView
+                android:id="@+id/nchurplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/nchurrupee"
+                android:layout_alignEnd="@+id/nchurtext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/bmaslView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/baby_masa" />
+
+            <TextView
+                android:id="@+id/bmasltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/bmaslView"
+                android:text="Baby Corn Masala "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bmaslcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/bmasltext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/bmaslbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bmasltext"
+                android:layout_alignTop="@+id/bmaslcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/bmaslplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/bmasltext"
+                android:layout_below="@+id/bmasltext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bmaslamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/bmaslplate"
+                android:layout_alignBottom="@+id/bmaslplate"
+                android:layout_alignEnd="@+id/bmaslbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/bmaslamou"
+                android:layout_alignBottom="@+id/bmaslamou"
+                android:layout_toEndOf="@+id/bmaslamou"
+                android:id="@+id/bmaslrupee" />
+
+            <EditText
+                android:id="@+id/bmaslnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/bmaslamou"
+                android:layout_alignEnd="@+id/bmaslrupee" />
+
+            <TextView
+                android:id="@+id/bmaslplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/bmaslrupee"
+                android:layout_alignEnd="@+id/bmasltext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/bchurView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/baby_chur" />
+
+            <TextView
+                android:id="@+id/bchurtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/bchurView"
+                android:text="BabyCorn Churumuri"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bchurcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/bchurtext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/bchurbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bchurtext"
+                android:layout_alignTop="@+id/bchurcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/bchurplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/bchurtext"
+                android:layout_below="@+id/bchurtext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bchuramou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/bchurplate"
+                android:layout_alignBottom="@+id/bchurplate"
+                android:layout_alignEnd="@+id/bchurbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/bchuramou"
+                android:layout_alignBottom="@+id/bchuramou"
+                android:layout_toEndOf="@+id/bchuramou"
+                android:id="@+id/bchurrupee" />
+
+            <EditText
+                android:id="@+id/bchurnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/bchuramou"
+                android:layout_alignEnd="@+id/bchurrupee" />
+
+            <TextView
+                android:id="@+id/bchurplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/bchurrupee"
+                android:layout_alignEnd="@+id/bchurtext" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/cmaslView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/capcicum" />
+
+            <TextView
+                android:id="@+id/cmasltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/cmaslView"
+                android:text="Capcicum Masala "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cmaslcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/cmasltext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/cmaslbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/cmasltext"
+                android:layout_alignTop="@+id/cmaslcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/cmaslplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/cmasltext"
+                android:layout_below="@+id/cmasltext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/cmaslamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/cmaslplate"
+                android:layout_alignBottom="@+id/cmaslplate"
+                android:layout_alignEnd="@+id/cmaslbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/cmaslamou"
+                android:layout_alignBottom="@+id/cmaslamou"
+                android:layout_toEndOf="@+id/cmaslamou"
+                android:id="@+id/cmaslrupee" />
+
+            <EditText
+                android:id="@+id/cmaslnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/cmaslamou"
+                android:layout_alignEnd="@+id/cmaslrupee" />
+
+            <TextView
+                android:id="@+id/cmaslplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/cmaslrupee"
+                android:layout_alignEnd="@+id/cmasltext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+
+
+
+        <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/nichurView"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/nip_chur" />
+
+                <TextView
+                    android:id="@+id/nichurtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/nichurView"
+                    android:text="Nipatt Churumuri"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/nichurcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="28dp"
+                    android:layout_toStartOf="@+id/nichurtext"
+                    android:text="Cart"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:id="@+id/nichurbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/nichurtext"
+                    android:layout_alignTop="@+id/nichurcart"
+                    android:layout_marginStart="29dp"
+                    android:text="Buy" />
+
+                <TextView
+                    android:id="@+id/nichurplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_alignStart="@+id/nichurtext"
+                    android:layout_below="@+id/nichurtext"
+                    android:layout_marginTop="22dp"
+                    android:text="One Plate"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/nichuramou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="50"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/nichurplate"
+                    android:layout_alignBottom="@+id/nichurplate"
+                    android:layout_alignEnd="@+id/nichurbuy" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Rupees"
+
+                    android:layout_alignBaseline="@+id/nichuramou"
+                    android:layout_alignBottom="@+id/nichuramou"
+                    android:layout_toEndOf="@+id/nichuramou"
+                    android:id="@+id/nichurrupee" />
+
+                <EditText
+                    android:id="@+id/nichurnumplate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number"
+                    android:text="1"
+                    android:layout_below="@+id/nichuramou"
+                    android:layout_alignEnd="@+id/nichurrupee" />
+
+                <TextView
+                    android:id="@+id/nichurplateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Plates"
+                    android:textStyle="italic"
+                    android:layout_alignBottom="@+id/nichurrupee"
+                    android:layout_alignEnd="@+id/nichurtext" />
+
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/nimaslView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/nip_masa" />
+
+            <TextView
+                android:id="@+id/nimasltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/nimaslView"
+                android:text="Nipatt Masala "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nimaslcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/nimasltext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/nimaslbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nimasltext"
+                android:layout_alignTop="@+id/nimaslcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/nimaslplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/nimasltext"
+                android:layout_below="@+id/nimasltext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/nimaslamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/nimaslplate"
+                android:layout_alignBottom="@+id/nimaslplate"
+                android:layout_alignEnd="@+id/nimaslbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/nimaslamou"
+                android:layout_alignBottom="@+id/nimaslamou"
+                android:layout_toEndOf="@+id/nimaslamou"
+                android:id="@+id/nimaslrupee" />
+
+            <EditText
+                android:id="@+id/nimaslnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/nimaslamou"
+                android:layout_alignEnd="@+id/nimaslrupee" />
+
+            <TextView
+                android:id="@+id/nimaslplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/nimaslrupee"
+                android:layout_alignEnd="@+id/nimasltext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/pmaslView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/pineapple" />
+
+            <TextView
+                android:id="@+id/pmasltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/pmaslView"
+                android:text="Pineapple Masala "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pmaslcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/pmasltext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/pmaslbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pmasltext"
+                android:layout_alignTop="@+id/pmaslcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/pmaslplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/pmasltext"
+                android:layout_below="@+id/pmasltext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/pmaslamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/pmaslplate"
+                android:layout_alignBottom="@+id/pmaslplate"
+                android:layout_alignEnd="@+id/pmaslbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/pmaslamou"
+                android:layout_alignBottom="@+id/pmaslamou"
+                android:layout_toEndOf="@+id/pmaslamou"
+                android:id="@+id/pmaslrupee" />
+
+            <EditText
+                android:id="@+id/pmaslnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/pmaslamou"
+                android:layout_alignEnd="@+id/pmaslrupee" />
+
+            <TextView
+                android:id="@+id/pmaslplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/pmaslrupee"
+                android:layout_alignEnd="@+id/pmasltext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/tsView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/tomato" />
+
+            <TextView
+                android:id="@+id/tstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/tsView"
+                android:text="Tomato Slice"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tscart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/tstext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/tsbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tstext"
+                android:layout_alignTop="@+id/tscart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/tsplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/tstext"
+                android:layout_below="@+id/tstext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tsamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/tsplate"
+                android:layout_alignBottom="@+id/tsplate"
+                android:layout_alignEnd="@+id/tsbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/tsamou"
+                android:layout_alignBottom="@+id/tsamou"
+                android:layout_toEndOf="@+id/tsamou"
+                android:id="@+id/tsrupee" />
+
+            <EditText
+                android:id="@+id/tsnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/tsamou"
+                android:layout_alignEnd="@+id/tsrupee" />
+
+            <TextView
+                android:id="@+id/tsplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/tsrupee"
+                android:layout_alignEnd="@+id/tstext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/kmView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/kata_mita" />
+
+            <TextView
+                android:id="@+id/kmtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/kmView"
+                android:text="Tomato Slice"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/kmcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_toStartOf="@+id/kmtext"
+                android:text="Cart"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/kmbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/kmtext"
+                android:layout_alignTop="@+id/kmcart"
+                android:layout_marginStart="29dp"
+                android:text="Buy" />
+
+            <TextView
+                android:id="@+id/kmplate"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:layout_alignStart="@+id/kmtext"
+                android:layout_below="@+id/kmtext"
+                android:layout_marginTop="22dp"
+                android:text="One Plate"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/kmamou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="50"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/kmplate"
+                android:layout_alignBottom="@+id/kmplate"
+                android:layout_alignEnd="@+id/kmbuy" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Rupees"
+
+                android:layout_alignBaseline="@+id/kmamou"
+                android:layout_alignBottom="@+id/kmamou"
+                android:layout_toEndOf="@+id/kmamou"
+                android:id="@+id/kmrupee" />
+
+            <EditText
+                android:id="@+id/kmnumplate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:inputType="number"
+                android:text="1"
+                android:layout_below="@+id/kmamou"
+                android:layout_alignEnd="@+id/kmrupee" />
+
+            <TextView
+                android:id="@+id/kmplateview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No of Plates"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/kmrupee"
+                android:layout_alignEnd="@+id/kmtext" />
+
+
+
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#909090"></TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a9a9a9"></TableLayout>
+
+
+
+
+
+
+
+    </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

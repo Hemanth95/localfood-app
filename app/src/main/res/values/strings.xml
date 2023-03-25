@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">local food</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_streetpg">streetpg</string>
+    <string name="title_activity_fast_food">Fast_food</string>
+    <string name="title_activity_restaurants">Restaurants</string>
+    <string name="title_activity_panipuri_stall">panipuri_stall</string>
+    <string name="title_activity_churumuri__stall">Churumuri_Stall</string>
+    <string name="title_activity_gobi_stall">Gobi_stall</string>
+</resources>
